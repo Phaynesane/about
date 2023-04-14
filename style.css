@@ -3,6 +3,7 @@
     padding: 0%;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    color: #fff;
 }
 /* Navigation Bar */
 .navbar
@@ -10,11 +11,11 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background-color: rgba(225, 225, 225, 0.4);
+    background-color: black;
     position: fixed;
     top: 0;
     inline-size: 100%;
-    line-height: 60px;
+    line-height: 55px;
     padding-block: 5px;
     z-index: 1;
 }
@@ -35,7 +36,7 @@
 .navbar ul li a
 {
     text-decoration: none;
-    color: #39395f;
+    color: white;
     padding: 8px 25px;
     transition: all .5s ease;
 }
@@ -48,41 +49,33 @@
 }
 /* Home section*/
 /*text with a video backgroud*/
-.showcase
+  #showcase 
 {
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 90%;
-    padding: 0;
-    margin: 0;
+    height: 100%;
 }
-.showcase .video
-{
-    width: 300px;
-    height: 95%;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    margin-left: 0;
-}
-.title
+#showcase video 
 {
     width: 100%;
     height: 100%;
-    font-size: 80px;
-    font-weight: 900;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.title 
+{
+    width: 100%;
+    height: 100%;
+    font-size: 130px;
     background-color: black;
     color: #fff;
     mix-blend-mode: multiply;
-    top: 63px;
-    left: 0;
-    right: 50px;
-    position: absolute;
-    display: flex;
-    align-items: flex-start;
-    justify-content: baseline;
-    padding-left: 170px;
-    padding-top: 110px;
+    margin-top: 65px;
+    padding-left: 150px;
+    padding-top: 100px;
+    padding-bottom: 75px;
 }
 /*About section*/
 #about
@@ -233,7 +226,7 @@
     height: 400px;
     flex-direction: column;
     margin-bottom: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top: 10px;
 }
 .Myproj
@@ -243,7 +236,7 @@
     align-items: center;
     font-weight: bold;
     text-decoration: none;
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: 10px;
     margin-top: 70px;
 }
@@ -251,10 +244,10 @@
 {
     display: flex;
     text-align: justify;
-    padding: 10px;
+    padding: 0;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 50px;
+    margin-left: 15px;
     justify-content: center;
     align-items: center;
     background: rgba(236, 79, 132, 0.7);
@@ -271,7 +264,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: normal;
     margin-left: 563px;
-    margin-top:40px;
+    margin-top:50px;
 }
 .services-list{
     padding: 40px;
@@ -332,8 +325,7 @@
     text-decoration: none;
     font-size: 65px;
     margin-bottom: 10px;
-    margin-top: 20px;
-    color: black;
+    margin-top: 25px;
 }
 #contact .content p
 {
@@ -411,6 +403,7 @@
     position: relative;
     width: 100%;
     margin-top: 10px;
+    color: blueviolet;
 }
 .contactForm .inputBox input,
 .contactForm .inputBox textarea
@@ -423,6 +416,7 @@
     border-bottom: 2px solid #333;
     outline: none;
     resize: none;
+    color: blueviolet;
 }
 .contactForm .inputBox span 
 {
@@ -433,7 +427,7 @@
     margin: 10px 0;
     pointer-events: none;
     transition: 0.5s;
-    color: #666;
+    color: blueviolet;
 }
 .contactForm .inputBox input:focus ~ span,
 .contactForm .inputBox input:valid ~ span,
@@ -532,8 +526,7 @@ transition: all 0.3s ease-out;
 }
 footer
 {
-    background-color: #f2f2f2;
-    color: #333;
+    background-color: black;
     padding: 20px;
     text-align: center;
 }
